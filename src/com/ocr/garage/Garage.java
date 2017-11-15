@@ -110,10 +110,10 @@ public class Garage {
 								new FileOutputStream(
 										new File("garage.txt"))));
 
-				//Nous allons écrire chaque objet VEhicile dans le fichier
+				//Nous allons écrire chaque objet VEhicile dans le fichier directement sous forme de liste :
 				oos.writeObject(voitures);
 
-				logger.info("This is an info message : on écrit la liste ");
+				logger.info("This is an info message : on écrit la liste " + voit.getMarque());
 
 				//Ne pas oublier de fermer le flux !
 				oos.close();		

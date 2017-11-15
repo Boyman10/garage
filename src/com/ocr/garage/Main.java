@@ -33,9 +33,7 @@ public class Main {
 		System.out.println(garage);
 
 		Vehicule lag1 = new Lagouna();
-		
-		//lag1.setEngine(new MoteurEssence("150 Chevaux", 10256d));
-		
+				
 		lag1.setEngine(new Moteur<TypeMoteur>("150 Chevaux", 10256d, TypeMoteur.ESSENCE));
 		
 		lag1.addOption(new GPS());

@@ -148,7 +148,7 @@ public abstract class Vehicule  implements Serializable {
 				return false;
 		} else if (!options.equals(other.options))
 			return false;
-		if (Double.doubleToLongBits(prix) != Double.doubleToLongBits(other.prix))
+		if (Double.doubleToLongBits(getPrix()) != Double.doubleToLongBits(other.getPrix()))
 			return false;
 		return true;
 	}
