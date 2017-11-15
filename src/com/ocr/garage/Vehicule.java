@@ -148,6 +148,8 @@ public abstract class Vehicule  implements Serializable {
 				return false;
 		} else if (!options.equals(other.options))
 			return false;
+		
+		// Beware here we need to compare rounded values  :
 		if (Double.doubleToLongBits(getPrix()) != Double.doubleToLongBits(other.getPrix()))
 			return false;
 		return true;
