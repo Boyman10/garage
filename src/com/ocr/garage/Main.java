@@ -21,6 +21,9 @@ import com.ocr.garage.vehicule.Lagouna;
  */
 public class Main {
 	
+	/**
+	 * Still fixing log4j2
+	 * */
 	public static void main(String[] args) {
 
 		Logger logger = LogManager.getRootLogger();
