@@ -108,19 +108,6 @@ public abstract class Vehicule  implements Serializable {
 		return engine;
 	}
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((engine == null) ? 0 : engine.hashCode());
-		result = prime * result + ((nom == null) ? 0 : nom.hashCode());
-		result = prime * result + ((nomMarque == null) ? 0 : nomMarque.hashCode());
-		result = prime * result + ((options == null) ? 0 : options.hashCode());
-		long temp;
-		temp = Double.doubleToLongBits(prix);
-		result = prime * result + (int) (temp ^ (temp >>> 32));
-		return result;
-	}
 
 	@Override
 	public boolean equals(Object obj) {

@@ -22,7 +22,7 @@ import com.ocr.garage.vehicule.Lagouna;
 public class Main {
 	
 	/**
-	 * Still fixing log4j2
+	 * Program - modifications around the Moteur Type to include genericity
 	 * */
 	public static void main(String[] args) {
 
